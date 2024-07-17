@@ -7,7 +7,7 @@ function loguear(){
     let password=document.getElementById("password").value;
     if (usuario==="Clean" && password==="123456")
         {
-            window.location.href="../"
+            window.location.href="./Recolectores/Pages/Servicios.html"
         }
         else
         {alert("Ha ingreso los usuario/clave incorrectos");

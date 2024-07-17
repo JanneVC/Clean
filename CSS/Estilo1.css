@@ -173,17 +173,6 @@ h4{
     }
   }
   
-  .team .team-member .social a {
-    background: color-mix(in srgb, var(--default-color), transparent 94%);
-    transition: ease-in-out 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    width: 36px;
-    height: 36px;
-  }
-  
   .team .team-member .social a i {
     color: color-mix(in srgb, var(--default-color), transparent 20%);
     font-size: 16px;
@@ -212,5 +201,10 @@ h4{
   a{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: rgb(13, 86, 2);
+  }
+
+  logo_menu{
+    width: 20%;
+    height: 20%;
   }
