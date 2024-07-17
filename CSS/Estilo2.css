@@ -33,7 +33,7 @@ header{
         justify-content: center;
     }
   }
-  
+
   @media (max-width: 750px) {
     .pic2{
         width: 50%;

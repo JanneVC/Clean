@@ -1,207 +1,207 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 body{
-    display: flex;
-    height: auto;
-    justify-content: center;
-    align-content: center;
-    padding:auto;
-    min-height: 100vh;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+  padding:auto;
+  min-height: 100vh;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(250, 249, 249);
-    text-align: center;
-    padding: 20px 25px;
-    box-shadow: 0 5px 10px rgb(184, 184, 173);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 249, 249);
+  text-align: center;
+  padding: 20px 25px;
+  box-shadow: 0 5px 10px rgb(184, 184, 173);
 }
 
 form label{
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 form a{
-    font-family:Arial, Helvetica, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 form label .f-user{
-    font-size: 20px;
-    color: blue;
-    margin-right: 10px;
+  font-size: 20px;
+  color: blue;
+  margin-right: 10px;
 }
 
 form button{
-    color: white;
-    border:none;
-    background-color: rgb(42, 42, 112);
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 10px;
+  color: white;
+  border:none;
+  background-color: rgb(42, 42, 112);
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 form p{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
 .logoclean{
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 
 h2{
-  font-family: Arial, Helvetica, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 h4{
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*--------------- Secciones-----------------------------*/
 .team .team-member {
-    background-color: var(--surface-color);
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    position: relative;
-    border-radius: 5px;
-    transition: 0.5s;
-    padding: 30px;
-    height: 10%;
-  }
-  
-  
-  @media (max-width: 50px) {
-    .team .team-member {
-      flex-direction: column;
-      justify-content: center !important;
-      align-items: center !important;
-    }
-  }
-  
-  .team .team-member .pic {
-    overflow: hidden;
-    width: 500px;
-    
-    /*border-radius: 50%;*/
-    flex-shrink: 0;
-  }
-  
-  .team .team-member .pic1 {
-    overflow: hidden;
-    width: 500px;
-    flex-shrink: 0;
-    position:fixed;
-   
-  }
-
-  
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 5px;
+  transition: 0.5s;
+  padding: 30px;
+  height: 10%;
+}
 
 
-  .team .team-member .pic img {
-    transition: ease-in-out 0.3s;
+@media (max-width: 50px) {
+  .team .team-member {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
   }
+}
+
+.team .team-member .pic {
+  overflow: hidden;
+  width: 500px;
   
-  .team .team-member:hover {
-    transform: translateY(-10px);
+  /*border-radius: 50%;*/
+  flex-shrink: 0;
+}
+
+.team .team-member .pic1 {
+  overflow: hidden;
+  width: 500px;
+  flex-shrink: 0;
+  position:fixed;
+ 
+}
+
+
+
+
+.team .team-member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .team-member:hover {
+  transform: translateY(-10px);
+}
+
+
+@media (max-width: 468px) {
+  .team .team-member .member-info {
+    padding: 30px 0 0 0;
+    text-align: center;
   }
-  
-  
-  @media (max-width: 468px) {
-    .team .team-member .member-info {
-      padding: 30px 0 0 0;
-      text-align: center;
-    }
-  }
-  
-  .team .team-member h4 {
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 20px;
-    color: rgb(4, 93, 7);
-  }
-  
-  .team .team-member span {
-    display: block;
-    font-size: 15px;
-    padding-bottom: 10px;
-    position: relative;
-    font-weight: 500;
-  }
-  
+}
+
+.team .team-member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: rgb(4, 93, 7);
+}
+
+.team .team-member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .team-member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 85%);
+  bottom: 0;
+  left: 0;
+}
+
+@media (max-width: 468px) {
   .team .team-member span::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 1px;
-    background: color-mix(in srgb, var(--default-color), transparent 85%);
-    bottom: 0;
-    left: 0;
+    left: calc(50% - 25px);
   }
-  
-  @media (max-width: 468px) {
-    .team .team-member span::after {
-      left: calc(50% - 25px);
-    }
-  }
-  
-  .team .team-member p {
-    margin: 10px 0 0 0;
-    font-size: 14px;
-  }
-  
+}
+
+.team .team-member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.team .team-member .social {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+}
+
+@media (max-width: 468px) {
   .team .team-member .social {
-    margin-top: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    width: 50%;
+    justify-content: center;
   }
-  
-  @media (max-width: 468px) {
-    .team .team-member .social {
-      justify-content: center;
-    }
-  }
-  
-  .team .team-member .social a i {
-    color: color-mix(in srgb, var(--default-color), transparent 20%);
-    font-size: 16px;
-    margin: 0 2px;
-  }
-  
-  .team .team-member .social a:hover {
-    background: var(--accent-color);
-  }
-  
-  .team .team-member .social a:hover i {
-    color: var(--contrast-color);
-  }
-  
-  .team .team-member .social a+a {
-    margin-left: 8px;
-  }
-  
+}
 
-  /*-------SERVICIOS----------*/
+.team .team-member .social a i {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 16px;
+  margin: 0 2px;
+}
 
-  .img-fluid{
-    width: 10%;
-  }
+.team .team-member .social a:hover {
+  background: var(--accent-color);
+}
 
-  a{
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(13, 86, 2);
-  }
+.team .team-member .social a:hover i {
+  color: var(--contrast-color);
+}
 
-  logo_menu{
-    width: 20%;
-    height: 20%;
-  }
+.team .team-member .social a+a {
+  margin-left: 8px;
+}
+
+
+/*-------SERVICIOS----------*/
+
+.img-fluid{
+  width: 10%;
+}
+
+a{
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(13, 86, 2);
+}
+
+logo_menu{
+  width: 20%;
+  height: 20%;
+}
