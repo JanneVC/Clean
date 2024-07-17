@@ -1,17 +1,14 @@
-const usuario=document.getElementById('usuario')
-const password=document.getElementById('password')
-const button=document.getElementById('button')
+const button = document.getElementById('button');
 
-function loguear(){
-    let usuario=document.getElementById("usuario").value;
-    let password=document.getElementById("password").value;
-    if (usuario==="Clean" && password==="123456")
-        {
-            window.location.href="./Recolectores/Pages/Servicios.html"
-        }
-        else
-        {alert("Ha ingreso los usuario/clave incorrectos");
-        }
+function loguear() {
+    const usuarioValue = document.getElementById("usuario").value;
+    const passwordValue = document.getElementById("password").value;
+
+    if (usuarioValue === "Clean" && passwordValue === "123456") {
+        window.location.href = "./Pages/Servicios.html"; 
+    } else {
+        alert("Ha ingresado el usuario/clave incorrectos");
+    }
 }
 
-loguear();
+button.addEventListener('click', loguear);
