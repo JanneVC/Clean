@@ -87,6 +87,7 @@ h4{
   .team .team-member .pic {
     overflow: hidden;
     width: 500px;
+    
     /*border-radius: 50%;*/
     flex-shrink: 0;
   }
@@ -110,10 +111,6 @@ h4{
     transform: translateY(-10px);
   }
   
-  .team .team-member .member-info {
-    padding-left: 30px;
-    
-  }
   
   @media (max-width: 468px) {
     .team .team-member .member-info {

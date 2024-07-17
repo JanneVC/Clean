@@ -2,37 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inicial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML,CSS,JS">
     <title>Cle@n by LIE</title>
-    <link rel="stylesheet" href="../Recolectores/CSS/Estilo1.css">
-    <link rel="stylesheet" href="../Recolectores/IMAGES/logo.jpg">
-   
+    <link rel="stylesheet" href="./CSS/Estilo1.css">
 </head>
-<body >
-   
-    <form>
+<body>
+    <form onsubmit="return false;">
         <h1 class="title">Bienvenido a Cle@n</h1>
-        <img src="../Recolectores/IMAGES/logo.jpg" class="logoclean">
+        <img src="./IMAGES/logo.jpg" class="logoclean" alt="Logo Cle@n">
         
         <label>
             <i class="f-user"></i>
             <p>Correo electrónico</p>
-            <input placeholder="Usuario@lie.com.pe" type="text" id="usuario">
+            <input placeholder="Usuario@lie.com.pe" type="text" id="usuario" required>
         </label>
         <label>
             <p>Contraseña</p>
             <i class="f-clave"></i>
-            <input placeholder="******" type="password" id="password">
+            <input placeholder="******" type="password" id="password" required>
         </label>
         <tr>
-        <a href="../Registro.html" class="link"> Si eres nuevo, SUSCRÍBETE</a>
-        <a href="#" class="link"> ¿Olvidaste la contraseña?</a>
-        <br>
-        <button id="button" onclick="loguear()">Inicio sesión</button>
-        <br>
-        <p>Por una ciudad más limpia</p>
+            <a href="./Registro.html" class="link"> Si eres nuevo, SUSCRÍBETE</a>
+            <a href="#" class="link"> ¿Olvidaste la contraseña?</a>
+            <br>
+            <button id="button">Inicio sesión</button>
+            <br>
+            <p>Por una ciudad más limpia</p>
+        </tr>
     </form>
-    <script src="../Recolectores/JS/Login.js"></script>
+    <script src="./JS/Login.js"></script>
 </body> 
 </html>
