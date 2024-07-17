@@ -1,0 +1,24 @@
+header{
+    width: flex;
+}
+
+#header -logo_menu{
+    width: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+}
+.pic{
+    width: 20px;
+    height: 20px;
+}
+
+.logo_menu{
+    width: 20%;
+    height: 20%;
+  }
+
+.pic2{
+    width: 20px;
+    height: 20px;
+}
